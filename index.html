@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:400,500,700%7CTangerine:400,700">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sensation</title>
+
+</head>
+
+<body class="container">
+    <header class="header" id="section-header">
+        <div class="navigation">
+            <div class="navigation__logo-box">
+                <svg class="navigation__logo" xmlns="http://www.w3.org/2000/svg" width="147" height="39" viewBox="0 0 147 39">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                font-size: 59px;
+                                fill: #fff;
+                                font-family: Tangerine;
+                                font-weight: 700;
+                            }
+                        </style>
+                    </defs>
+                    <text id="Sensation" class="cls-1" x="-2.683" y="38.307">Sensation</text>
+                </svg>
+            </div>
+
+            <a class="navigation__mobile js--nav-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="navigation__mobile--icon"
+                    x="0px" y="0px" viewBox="0 0 459 459">
+                    <path class="mobile-menu" d="M0,382.5h459v-51H0V382.5z M0,255h459v-51H0V255z M0,76.5v51h459v-51H0z" fill="#fff" />
+                </svg>
+            </a>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#section-header" class="navigation__link cool-link sticky-home">
+                            Home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#section-menu" class="navigation__link cool-link sticky-links">
+                            Menu</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#section-gallery" class="navigation__link cool-link sticky-links">
+                            Gallery</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#section-blog" class="navigation__link cool-link sticky-links">
+                            Blog</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#section-testimonials" class="navigation__link cool-link sticky-links">
+                            Testimonials</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#section-services" class="navigation__link cool-link sticky-links services-link">
+                            Services</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main" id="text"></span>
+                <span class="heading-primary--sub" id="text1"></span>
+            </h1>
+        </div>
+
+        <div class="cta">
+            <a href="#section__reservation" class="btn btn--full">book now</a>
+            <a href="#section-footer" class="btn btn--ghost">contact us</a>
+        </div>
+
+    </header>
+
+    <section class="about-us js--about-us">
+        <h2 class="heading-secondary">
+            <span class="heading-secondary--main">About Us</span>
+            <span class="heading-secondary--sub">Discover Our Story</span>
+        </h2>
+        <p class="about-us__story">
+            Sensation is one of the oldest restaurant in Rome that’s been active since 1899 when our Enzo Cartieri and his best friend
+            Luca Malfora built up this place from the ground up. Situated in a daydream scenario right in front of Trevi
+            Fountain, inside Rome’s hearth itself. Nowadays is still one of the reference point for the indisputable Italian
+            cuisine.
+        </p>
+
+        <img src="img/alex-munsell-18756-unsplash.jpg" alt="steak" class="about-us__img about-us__img--1">
+        <img src="img/alisa-anton-81519-unsplash.png" alt="dessert-1" class="about-us__img about-us__img--2">
+        <img src="img/pablo-merchan-montes-73076-unsplash.png" alt="dessert-2" class="about-us__img about-us__img--3">
+    </section>
+
+    <section class="reservation" id="section__reservation">
+        <div class="reservation__card">
+            <h2 class="reservation__heading--main">Opening Hours</h2>
+            <h2 class="reservation__heading--sub">Open for Special Occasions</h2>
+            <img src="img/clock.png" alt="clock" class="reservation__clock">
+            <p class="reservation__opening reservation__opening--1">Monday-Thursday
+                <br>08AM-10PM</p>
+            <p class="reservation__opening reservation__opening--2">Friday-Saturday
+                <br>10AM-11:30PM</p>
+            <p class="reservation__opening reservation__opening--3">Sunday
+                <br>1PM-10PM</p>
+        </div>
+
+        <form action="#" class="reservation__form">
+            <h2 class="reservation__form--main">Reservation</h2>
+            <h2 class="reservation__form--sub">We Are Open All Day</h2>
+
+            <input type="text" class="reservation__form--input reservation__form--date" placeholder="Choose a Date">
+            <input type="text" class="reservation__form--input reservation__form--time" placeholder="Choose a Time">
+            <input type="text" class="reservation__form--input reservation__form--people" placeholder="1 People">
+            <input type="email" class="reservation__form--input reservation__form--email" placeholder="Email">
+            <input type="text" class="reservation__form--input reservation__form--phone" placeholder="Phone Number">
+
+            <a href="#" class="reservation__form--ghost">book a table</a>
+        </form>
+    </section>
+
+    <section class="menu" id="section-menu">
+        <div class="menu__buttons">
+            <a href="#" class="menu__buttons--1">breakfast</a>
+            <a href="#" class="menu__buttons--2">lunch</a>
+            <a href="#" class="menu__buttons--3">dinner</a>
+        </div>
+
+        <div class="card">
+            <div class="card__one">
+                <h3 class="card__one--heading">
+                    Salad with lamb and raspberries
+                    <span class="card__one--price">$23</span>
+                </h3>
+                <p class="card__one--text">
+                    Duis autem vel eum irnure moreon and hendrer essse molestie consemuat veam enllum dolorm neugiat nulla facilisis at arrow
+                    eros.
+                </p>
+                <a class="card__one--order">order now</a>
+
+                <div class="card__one--img1"></div>
+            </div>
+        </div>
+
+
+        <div class="card__one card__two">
+            <h3 class="card__one--heading">
+                Fresh gnocchi with lemon sauce
+                <span class="card__one--price card__two--price">$16</span>
+            </h3>
+            <p class="card__one--text">
+                Duis autem vel eum irnure moreon and hendrer essse molestie consemuat veam enllum dolorm neugiat nulla facilisis at arrow
+                eros.
+            </p>
+            <a class="card__one--order">order now</a>
+
+            <div class="card__one--img2"></div>
+        </div>
+
+        <div class="card__one card__three">
+            <h3 class="card__one--heading">
+                Pasta with cheese and herbs
+                <span class="card__one--price card__three--price">$21</span>
+            </h3>
+            <p class="card__one--text">
+                Duis autem vel eum irnure moreon and hendrer essse molestie consemuat veam enllum dolorm neugiat nulla facilisis at arrow
+                eros.
+            </p>
+            <a class="card__one--order">order now</a>
+
+            <div class="card__one--img3"></div>
+        </div>
+
+        <div class="card__one card__four">
+            <h3 class="card__one--heading">
+                Grilled pork chop with potatoes
+                <span class="card__one--price card__four--price">$28</span>
+            </h3>
+            <p class="card__one--text">
+                Duis autem vel eum irnure moreon and hendrer essse molestie consemuat veam enllum dolorm neugiat nulla facilisis at arrow
+                eros.
+            </p>
+            <a class="card__one--order">order now</a>
+
+            <div class="card__one--img4"></div>
+        </div>
+
+        <div class="card__one card__five">
+            <h3 class="card__one--heading">
+                Pinot noir glazed salmon
+                <span class="card__one--price card__five--price">$45</span>
+            </h3>
+            <p class="card__one--text">
+                Duis autem vel eum irnure moreon and hendrer essse molestie consemuat veam enllum dolorm neugiat nulla facilisis at arrow
+                eros.
+            </p>
+            <a class="card__one--order">order now</a>
+
+            <div class="card__one--img5"></div>
+        </div>
+
+        <div class="card__one card__six">
+            <h3 class="card__one--heading">
+                Grilled octopus with cream
+                <span class="card__one--price card__six--price">$37</span>
+            </h3>
+            <p class="card__one--text">
+                Duis autem vel eum irnure moreon and hendrer essse molestie consemuat veam enllum dolorm neugiat nulla facilisis at arrow
+                eros.
+            </p>
+            <a class="card__one--order">order now</a>
+
+            <div class="card__one--img6"></div>
+        </div>
+
+        <div class="menu__page">
+            <a href="#" class="menu__page--left">&#60;</a>
+            <a href="#" class="menu__page--1">1</a>
+            <a href="#" class="menu__page--2">2</a>
+            <a href="#" class="menu__page--3">3</a>
+            <a href="#" class="menu__page--right">&#62;</a>
+        </div>
+    </section>
+
+    <section class="gallery" id="section-gallery">
+        <h2 class="gallery__title">Restaurant Gallery</h2>
+        <figure class="gallery__images">
+            <figure class="gallery__one">
+                <img src="img/fg-2-500x440.jpg" alt="image" class="gallery__images--1">
+                <figcaption class="gallery__caption gallery__caption--1">fillet steak</figcaption>
+            </figure>
+            <figure class="gallery__two">
+                <img src="img/fg-8-500x440.jpg" alt="image" class="gallery__images--2">
+                <figcaption class="gallery__caption gallery__caption--2">pancake with honey</figcaption>
+            </figure>
+            <figure class="gallery__three">
+                <img src="img/fg-11-500x440.jpg" alt="image" class="gallery__images--3">
+                <figcaption class="gallery__caption gallery__caption--3">pancake with cheese</figcaption>
+            </figure>
+            <figure class="gallery__four">
+                <img src="img/fg-1-500x440.jpg" alt="image" class="gallery__images--4">
+                <figcaption class="gallery__caption gallery__caption--4">roasted pork</figcaption>
+            </figure>
+        </figure>
+    </section>
+
+    <section class="blog" id="section-blog">
+        <h2 class="blog__heading--main">Blog Post</h2>
+        <h2 class="blog__heading--sub">See Our Latest News</h2>
+
+        <div class="blog__card">
+            <figure class="blog__top blog__top--1">
+                <figcaption class="blog__top--caption blog__top--caption--1">Prepare the best Grilled Chicken in just few steps</figcaption>
+            </figure>
+            <div class="blog__shape">
+                <img src="img/5.jpg" alt="image" class="blog__shape--picture">
+                <h3 class="blog__shape--title">Mark Stolberg</h3>
+            </div>
+            <div class="blog__divider"></div>
+            <p class="blog__text">
+                At veri eis et accusamus et iusto odio dignis si ducimus qui blanditiis praesentium volup tatum del enti atque
+            </p>
+
+            <div class="blog__bottom">
+                <div class="blog__bottom--elements">
+                    <img src="img/calendar.png" alt="calendar" class="blog__bottom--calendar">
+                    <p class="blog__bottom--date">15 Febrary 2018</p>
+                </div>
+                <a href="#" class="blog__bottom--more">Read More &#62;</a>
+            </div>
+        </div>
+
+        <div class="blog__card blog__card--2">
+            <figure class="blog__top blog__top--2">
+                <figcaption class="blog__top--caption blog__top--caption--1">Classic Nouvelle cuisine recipes with our french Chef</figcaption>
+            </figure>
+            <div class="blog__shape">
+                <img src="img/7.jpg" alt="image" class="blog__shape--picture">
+                <h3 class="blog__shape--title">Alicia Smith</h3>
+            </div>
+            <div class="blog__divider"></div>
+            <p class="blog__text">
+                At veri eis et accusamus et iusto odio dignis si ducimus qui blanditiis praesentium volup tatum del enti atque
+            </p>
+
+            <div class="blog__bottom">
+                <div class="blog__bottom--elements">
+                    <img src="img/calendar.png" alt="calendar" class="blog__bottom--calendar">
+                    <p class="blog__bottom--date">6 May 2018</p>
+                </div>
+                <a href="#" class="blog__bottom--more">Read More &#62;</a>
+            </div>
+        </div>
+
+        <div class="blog__card blog__card--3">
+            <figure class="blog__top blog__top--3">
+                <figcaption class="blog__top--caption blog__top--caption--1">How to create the best Italian Pizza with the help of our chefs</figcaption>
+            </figure>
+            <div class="blog__shape">
+                <img src="img/8.jpg" alt="image" class="blog__shape--picture">
+                <h3 class="blog__shape--title">Antony Coleman</h3>
+            </div>
+            <div class="blog__divider"></div>
+            <p class="blog__text">
+                At veri eis et accusamus et iusto odio dignis si ducimus qui blanditiis praesentium volup tatum del enti atque
+            </p>
+
+            <div class="blog__bottom">
+                <div class="blog__bottom--elements">
+                    <img src="img/calendar.png" alt="calendar" class="blog__bottom--calendar">
+                    <p class="blog__bottom--date">21 April 2018</p>
+                </div>
+                <a href="#" class="blog__bottom--more">Read More &#62;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="section-testimonials">
+        <h2 class="testimonials__heading--main">Testimonials</h2>
+        <h2 class="testimonials__heading--sub">What Our Clients Says</h2>
+
+        <div class="testimonials__shape">
+            <img src="img/asd.jpg" alt="image" class="testimonials__shape--picture--1">
+        </div>
+        <div class="testimonials__left">
+            <p class="testimonials__left--title">olga landif</p>
+            <p class="testimonials__left--text">Pellentesque habitant morbi tristique senectus Vivamus at nisl eget ipsum but because occasionally circumstances
+                occur in toil and pain can procure him some great pleasure</p>
+        </div>
+
+        <div class="testimonials__image">
+            <img src="img/ds.jpg" alt="image" class="testimonials__image--1">
+        </div>
+        <div class="testimonials__left testimonials__right">
+            <p class="testimonials__left--title">stefan norman</p>
+            <p class="testimonials__left--text">Pellentesque habitant morbi tristique senectus Vivamus at nisl eget ipsum but because occasionally circumstances
+                occur in toil and pain can procure him some great pleasure</p>
+        </div>
+
+        <div class="testimonials__span">
+            <span class="testimonials__span--1"></span>
+            <span class="testimonials__span--2"></span>
+            <span class="testimonials__span--3"></span>
+        </div>
+    </section>
+
+    <section class="services" id="section-services">
+        <h2 class="services__heading--main">What we offer</h2>
+        <h2 class="services__heading--sub">Our Great Services</h2>
+
+        <div class="services__card">
+            <img src="img/calendar-two.png" alt="image" class="services__calendar">
+            <p class="services__title">Opened 24/7</p>
+            <p class="services__text">Sensation Restaurant is open 24/7 to satisfy all customers!</p>
+        </div>
+
+        <div class="services__card services__card--2">
+            <img src="img/dinner.png" alt="image" class="services__calendar">
+            <p class="services__title">Special Menu</p>
+            <p class="services__text">Ask for our daily specials including the vegetarian dish of the day</p>
+        </div>
+
+        <div class="services__card services__card--3">
+            <img src="img/delivery.png" alt="image" class="services__calendar">
+            <p class="services__title">Home Delivery</p>
+            <p class="services__text">Everyday essentials delivered on time with a schedule you set</p>
+        </div>
+    </section>
+
+    <footer class="footer" id="section-footer">
+        <img src="img/Sensation-logo.png" alt="Logo" class="footer__logo">
+
+        <a href="#" class="footer__instagram">
+            <svg class="footer__instagram--svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                x="0px" y="0px" width="512px" height="512px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;"
+                xml:space="preserve">
+                <path class="instagram" d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z"
+                    fill="#fff" />
+                <polygon class="instagram" points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762    "
+                    fill="#fff" />
+                <path class="instagram" d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z"
+                    fill="#fff" />
+                <path class="instagram" d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z"
+                    fill="#fff" />
+            </svg>
+        </a>
+
+        <a href="#" class="footer__facebook">
+            <svg class="footer__facebook--svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                x="0px" y="0px" width="512px" height="512px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;"
+                xml:space="preserve">
+                <path class="facebook" d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826    C49.652,11.137,38.516,0,24.826,0z M31,25.7h-4.039c0,6.453,0,14.396,0,14.396h-5.985c0,0,0-7.866,0-14.396h-2.845v-5.088h2.845    v-3.291c0-2.357,1.12-6.04,6.04-6.04l4.435,0.017v4.939c0,0-2.695,0-3.219,0c-0.524,0-1.269,0.262-1.269,1.386v2.99h4.56L31,25.7z    "
+                    fill="#fff" />
+            </svg>
+        </a>
+
+        <a href="#" class="footer__twitter">
+            <svg class="footer__twitter--svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                x="0px" y="0px" width="512px" height="512px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;"
+                xml:space="preserve">
+                <path class="twitter" d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826    C49.652,11.137,38.516,0,24.826,0z M35.901,19.144c0.011,0.246,0.017,0.494,0.017,0.742c0,7.551-5.746,16.255-16.259,16.255    c-3.227,0-6.231-0.943-8.759-2.565c0.447,0.053,0.902,0.08,1.363,0.08c2.678,0,5.141-0.914,7.097-2.446    c-2.5-0.046-4.611-1.698-5.338-3.969c0.348,0.066,0.707,0.103,1.074,0.103c0.521,0,1.027-0.068,1.506-0.199    c-2.614-0.524-4.583-2.833-4.583-5.603c0-0.024,0-0.049,0.001-0.072c0.77,0.427,1.651,0.685,2.587,0.714    c-1.532-1.023-2.541-2.773-2.541-4.755c0-1.048,0.281-2.03,0.773-2.874c2.817,3.458,7.029,5.732,11.777,5.972    c-0.098-0.419-0.147-0.854-0.147-1.303c0-3.155,2.558-5.714,5.713-5.714c1.644,0,3.127,0.694,4.171,1.804    c1.303-0.256,2.523-0.73,3.63-1.387c-0.43,1.335-1.333,2.454-2.516,3.162c1.157-0.138,2.261-0.444,3.282-0.899    C37.987,17.334,37.018,18.341,35.901,19.144z"
+                    fill="#fff" />
+            </svg>
+        </a>
+
+        <a href="#" class="footer__trip">
+            <svg class="footer__trip--svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                x="0px" y="0px" width="512px" height="512px" viewBox="0 0 97.75 97.75" style="enable-background:new 0 0 97.75 97.75;"
+                xml:space="preserve">
+                <path class="trip" d="M67.211,46.07c-3.291,0-5.971,2.648-5.982,5.917c-0.012,3.252,2.681,5.959,5.939,5.967    c3.266,0.01,5.949-2.674,5.947-5.943C73.113,48.732,70.465,46.07,67.211,46.07z M67.211,55.02c-1.686,0-3.043-1.332-3.039-2.983    c0.002-1.716,1.318-3.039,3.02-3.041c1.666-0.002,3.031,1.362,3.017,3.021C70.189,53.672,68.848,55.02,67.211,55.02z"
+                    fill="#fff" />
+                <path class="trip" d="M30.512,37.514c-7.9-0.07-14.787,6.523-14.65,14.921c0.129,7.832,6.584,14.472,14.814,14.4    c8.047-0.068,14.516-6.641,14.531-14.6C45.219,44.063,38.672,37.514,30.512,37.514z M30.748,61.1    c-5.293,0.242-9.564-3.977-9.555-9.1c0.01-5.191,4.287-9.162,9.125-9.074c5.023-0.006,9.1,4.049,9.086,9.07    C39.391,57.078,35.385,60.889,30.748,61.1z"
+                    fill="#fff" />
+                <path class="trip" d="M48.875,0C21.883,0,0,21.883,0,48.875S21.883,97.75,48.875,97.75S97.75,75.867,97.75,48.875S75.867,0,48.875,0z     M76.971,67.852c-2.984,1.896-6.283,2.795-9.807,2.814c-1.48,0.01-2.955-0.189-4.4-0.564c-3.522-0.914-6.545-2.672-9.035-5.33    c-0.33-0.35-0.639-0.713-0.987-1.108c-1.316,1.961-2.611,3.892-3.939,5.871c-1.32-1.974-2.6-3.886-3.873-5.787    c-0.088,0.045-0.113,0.051-0.131,0.065c-0.029,0.025-0.055,0.056-0.076,0.082c-3.012,3.556-6.801,5.734-11.414,6.465    c-2.568,0.406-5.109,0.261-7.604-0.428c-3.533-0.971-6.537-2.834-8.963-5.586c-2.371-2.688-3.846-5.812-4.398-9.363    c-0.633-3.312,0.137-6.508,0.33-7.282c0.559-2.252,1.531-4.322,2.867-6.225c0.094-0.135,0.127-0.375,0.082-0.535    c-0.545-1.998-1.482-3.816-2.582-5.557c-0.279-0.441-0.613-0.85-0.922-1.275c0-0.049,0-0.098,0-0.148    c0.061,0.008,0.123,0.02,0.184,0.02c3.697,0.002,7.396,0.002,11.094-0.004c0.162,0,0.34-0.066,0.479-0.154    c2.598-1.668,5.367-2.988,8.275-4.016c2.098-0.74,4.238-1.318,6.424-1.742c2.115-0.408,4.24-0.697,6.389-0.838    c5.238-0.404,9.426,0.15,12.211,0.539c2.053,0.289,4.064,0.807,6.051,1.416c3.469,1.068,6.74,2.553,9.818,4.477    c0.213,0.133,0.5,0.217,0.752,0.217c3.613,0.016,7.227,0.01,10.84,0.014c0.291,0,0.582,0.031,0.871,0.047    c0,0.07,0.01,0.1-0.002,0.117c-0.168,0.258-0.34,0.516-0.508,0.775c-1.225,1.879-2.273,3.848-2.893,6.021    c-0.066,0.232-0.082,0.428,0.076,0.658c3.219,4.621,4.243,9.693,2.899,15.162C83.898,61.465,81.15,65.203,76.971,67.852z"
+                    fill="#fff" />
+                <path class="trip" d="M30.236,46.07c-3.209,0.006-5.898,2.715-5.891,5.936c0.008,3.26,2.695,5.941,5.963,5.949    c3.248,0.008,5.939-2.697,5.932-5.965C36.23,48.691,33.564,46.064,30.236,46.07z M30.311,55.051    c-1.723,0.002-3.051-1.328-3.051-3.061c0-1.701,1.326-3.021,3.043-3.023c1.689-0.002,3.049,1.348,3.057,3.035    C33.365,53.674,31.994,55.045,30.311,55.051z"
+                    fill="#fff" />
+                <path class="trip" d="M66.902,37.57c-8.019,0.164-14.295,6.627-14.367,14.622c0,8.121,6.59,14.756,14.682,14.725    c8.123-0.029,14.682-6.477,14.676-14.688C81.889,43.766,75.023,37.404,66.902,37.57z M67.562,61.102    c-5.271,0.203-9.489-4-9.487-9.094c0.002-5.154,4.252-9.17,9.112-9.082c5.027-0.01,9.099,4.039,9.099,9.061    C76.285,57.027,72.283,60.922,67.562,61.102z"
+                    fill="#fff" />
+                <path class="trip" d="M54.732,38.639c3.248-2.98,7.117-4.543,11.506-4.875c-5.209-2.314-10.701-3.299-16.355-3.408    c-6.424-0.125-12.674,0.822-18.643,3.326c4.463,0.271,8.383,1.828,11.695,4.838c3.305,3.008,5.242,6.756,5.945,11.166    C49.604,45.328,51.488,41.613,54.732,38.639z"
+                    fill="#fff" />
+            </svg>
+        </a>
+
+        <div class="footer__info">
+            <img src="img/location.png" alt="image" class="footer__info--location">
+            <p class="footer__info--main">Via Del Corso, 134</p>
+            <p class="footer__info--sub">Rome, Italy</p>
+        </div>
+
+        <div class="footer__middle">
+            <img src="img/phone.png" alt="image" class="footer__middle--phone">
+            <p class="footer__middle--main">+3289242569</p>
+            <p class="footer__middle--sub">+065429932223</p>
+        </div>
+
+        <div class="footer__right">
+            <img src="img/mail.png" alt="image" class="footer__right--mail">
+            <a href="#" class="footer__right--main">infosensation@gmail.com</a>
+            <a href="#" class="footer__right--sub">www.sensation.com</a>
+        </div>
+
+        <div class="footer__divider"></div>
+        <p class="footer__copyright">© 2018 created by R4z1ell Blood. All Rights Reserved.</p>
+        <a href="#section-header" class="circle__link">
+            <div class="circle">
+                <span>&#8743;</span>
+            </div>
+        </a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+
+</html>

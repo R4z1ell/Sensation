@@ -1,0 +1,333 @@
+.header {
+  background-image: url(../img/Home-Main-Banner-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: full-start / full-end;
+  display: grid;
+
+  @media only screen and (max-width: $bp-kindle) {
+    width: 1280px;
+  }
+
+  @media only screen and (max-width: $bp-largest) {
+    width: 1200px;
+  }
+
+  @media only screen and (max-width: $bp-ipad) {
+    width: 1024px;
+  }
+
+  @media only screen and (max-width: $bp-nexus7) {
+    width: 960px;
+  }
+
+  @media only screen and (max-width: $bp-iphone-6-Plus) {
+    grid-template-columns: repeat(29, 2.269rem);
+    grid-template-rows: repeat(40, 3.02rem);
+  }
+
+  &__text-box {
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      grid-column: 1 / span 29;
+      grid-row: 10 / min-content;
+    }
+  }
+}
+
+.heading-primary {
+  display: grid;
+  margin-top: 7rem;
+
+  &--main {
+    font-size: 7.5rem;
+    font-weight: 700;
+    font-family: $font-display;
+    color: $color-primary;
+    justify-self: center;
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      font-size: 7rem;
+    }
+  }
+
+  &--sub {
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: $color-white;
+    justify-self: center;
+
+    @media only screen and (max-width: $bp-kindle) {
+      margin-top: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      margin-top: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-ipad) {
+      margin-top: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      font-size: 4rem;
+      margin-top: 7rem;
+    }
+
+    @media only screen and (max-width: $bp-galaxy) {
+      margin-top: 8.5rem;
+    }
+  }
+}
+
+////// STICKY NAVIGATION //////
+
+.navigation__sticky {
+  display: flex;
+  position: fixed;
+  background-color: rgba($color-white, 0.95);
+  box-shadow: 0 2px 2px #efefef;
+  width: 100% !important;
+  height: 6rem;
+  justify-content: space-around !important;
+  align-items: center;
+  z-index: 1000;
+
+  @media only screen and (max-width: $bp-iphone-6-Plus) {
+    height: 7rem;
+  }
+}
+
+.navigation__clicked {
+  height: 28rem;
+}
+
+.navigation__sticky--nav {
+  position: relative;
+  top: -33%;
+}
+
+.navigation__sticky--logo {
+  margin-bottom: 3rem;
+
+  @media only screen and (max-width: $bp-iphone-6-Plus) {
+    position: relative;
+    left: -2%;
+  }
+}
+
+.navigation__sticky--mobile {
+  @media only screen and (max-width: $bp-iphone-6-Plus) {
+    display: none !important;
+  }
+}
+
+.navigation__icon--position {
+  top: 6.2% !important;
+}
+
+.services-link {
+  position: relative;
+  left: -20%;
+}
+
+/*////////////////////////////*/
+
+.navigation {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 120rem;
+
+  @media only screen and (max-width: $bp-iphone-6-Plus) {
+    display: block;
+    width: 68.06rem;
+  }
+
+  &__nav {
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      display: none;
+      position: relative;
+      top: -105%;
+      width: 30rem;
+    }
+  }
+
+  &__mobile {
+    display: none;
+    cursor: pointer;
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      display: inline-block;
+    }
+
+    &--icon {
+      position: absolute;
+      width: 6%;
+      right: 6%;
+      top: 3%;
+    }
+  }
+
+  &__item {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-right: 4.2rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__item:first-child a {
+    color: $color-primary;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin-top: 3.7rem;
+
+    @media only screen and (max-width: $bp-ipad) {
+      margin-top: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 5rem;
+      margin-top: 29rem;
+      left: 65%;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+
+    @media only screen and (max-width: $bp-ipad) {
+      font-size: 1.9rem;
+    }
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__logo {
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      margin-left: 4rem;
+      margin-top: 1.8rem;
+      width: 24%;
+      height: auto;
+    }
+  }
+
+  &__logo:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.1s;
+  }
+
+  &__logo-box {
+    margin-top: 2rem;
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      position: relative;
+      top: -37%;
+    }
+  }
+}
+
+.btn--full {
+  background-color: $color-primary;
+  color: $color-secondary;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  margin-right: 1rem;
+  padding: 1.4rem 3.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media only screen and (max-width: $bp-iphone-6-Plus) {
+    font-size: 2rem;
+  }
+
+  &:hover {
+    background-color: $color-primary-dark;
+    transition: all 0.2s;
+  }
+}
+
+.btn--ghost {
+  border: 2px solid $color-white;
+  color: $color-white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  padding: 1.2rem 2.7rem;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 1.1rem 2.7rem;
+  }
+
+  @media only screen and (max-width: $bp-nexus7) {
+    padding: 1rem 2.7rem 1.1rem 2.7rem;
+  }
+
+  @media only screen and (max-width: $bp-iphone-6-Plus) {
+    font-size: 2rem;
+    padding: 1rem 2.7rem;
+  }
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-secondary;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+  }
+}
+
+.cta {
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -28rem;
+
+  @media only screen and (max-width: $bp-kindle) {
+    margin-top: -14.5%;
+  }
+
+  @media only screen and (max-width: $bp-largest) {
+    margin-top: -14%;
+  }
+
+  @media only screen and (max-width: $bp-ipad) {
+    margin-top: -18%;
+  }
+
+  @media only screen and (max-width: $bp-nexus7) {
+    margin-top: -14%;
+  }
+
+  @media only screen and (max-width: $bp-iphone-6-Plus) {
+    grid-row: 23 / span 6;
+    grid-column: 6 / span 20;
+  }
+}
+
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: $color-primary;
+  transition: width 0.3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+}

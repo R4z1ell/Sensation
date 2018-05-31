@@ -1,0 +1,69 @@
+.wrapper {
+  display: inline-block;
+  top: -900px;
+  position: relative;
+  height: 150px; /* default */
+  width: 90px; /* default */
+  transition: ease 0.3s all;
+
+  @media only screen and (max-width: $bp-iphone-6-Plus) {
+    top: -1500px;
+  }
+
+  @media only screen and (max-width: $bp-galaxy) {
+    top: -3500px;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &.space {
+      padding: 0;
+      min-width: 30px;
+      display: inline-block;
+
+      @media only screen and (max-width: $bp-largest) {
+        min-width: 15px;
+      }
+    }
+  }
+}
+
+.wrapper1 {
+  display: inline-block;
+  top: -1200px;
+  position: relative;
+  height: 150px; /* default */
+  width: 90px; /* default */
+  transition: ease 0.3s all;
+
+  @media only screen and (max-width: $bp-iphone-6-Plus) {
+    top: -3000px;
+  }
+
+  @media only screen and (max-width: $bp-galaxy) {
+    top: -6000px;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &.space1 {
+      padding: 0;
+      min-width: 20px;
+      display: inline-block;
+
+      @media only screen and (max-width: $bp-largest) {
+        min-width: 15px;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        min-width: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,293 @@
+.gallery {
+  grid-column: full-start / full-end;
+  background-color: $color-secondary;
+
+  @media only screen and (max-width: $bp-kindle) {
+    width: 1280px;
+  }
+
+  @media only screen and (max-width: $bp-largest) {
+    width: 1200px;
+  }
+
+  @media only screen and (max-width: $bp-nexus7) {
+    width: 960px;
+  }
+
+  @media only screen and (max-width: $bp-iphone-6-Plus) {
+    width: 414px;
+  }
+
+  &__title {
+    color: $color-white;
+    font-size: 6rem;
+    font-family: $font-display;
+    text-align: center;
+    padding: 4rem 0;
+
+    @media only screen and (max-width: $bp-largest) {
+      padding: 2rem 0;
+    }
+
+    @media only screen and (max-width: $bp-ipad) {
+      width: 1024px;
+    }
+
+    @media only screen and (max-width: $bp-nexus7) {
+      margin-left: -3.5%;
+    }
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      padding: 5rem 0;
+      font-size: 6.5rem;
+      margin-left: -74%;
+    }
+
+    @media only screen and (max-width: $bp-galaxy) {
+      margin-left: -80%;
+    }
+  }
+
+  &__one,
+  &__two,
+  &__three,
+  &__four {
+    max-width: 25%;
+  }
+
+  &__images {
+    display: flex;
+    position: relative;
+    margin-bottom: -0.47rem;
+
+    @media only screen and (max-width: $bp-kindle) {
+      margin-bottom: -0.5rem;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      margin-bottom: -0.6rem;
+    }
+
+    @media only screen and (max-width: $bp-ipad) {
+      margin-bottom: -0.5rem;
+    }
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      flex-direction: column;
+    }
+
+    &--1 {
+      max-width: 47.57rem;
+      height: 44rem;
+
+      @media only screen and (max-width: $bp-kindle) {
+        width: 39.2rem;
+        height: auto;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        display: inline-block;
+        width: 37.5rem;
+        height: 98.4%;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        min-width: 414px;
+        height: 100%;
+      }
+    }
+
+    &--2 {
+      max-width: 47.57rem;
+      height: 44rem;
+
+      @media only screen and (max-width: $bp-kindle) {
+        width: 39.2rem;
+        height: auto;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        display: inline-block;
+        width: 37.5rem;
+        height: 98.4%;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        min-width: 414px;
+        height: 100%;
+      }
+    }
+
+    &--3 {
+      max-width: 47.57rem;
+      height: 44rem;
+
+      @media only screen and (max-width: $bp-kindle) {
+        width: 39.2rem;
+        height: auto;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        display: inline-block;
+        width: 37.5rem;
+        height: 98.4%;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        min-width: 414px;
+        height: 100%;
+      }
+    }
+
+    &--4 {
+      width: 47.57rem;
+      height: 44rem;
+
+      @media only screen and (max-width: $bp-kindle) {
+        width: 39.2rem;
+        height: auto;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        display: inline-block;
+        width: 37.5rem;
+        height: 98.4%;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        min-width: 414px;
+        height: 100%;
+      }
+    }
+  }
+
+  &__caption {
+    color: $color-white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 80%;
+    transition: all 0.5s;
+
+    &--1 {
+      margin-left: 18rem;
+      opacity: 0;
+
+      @media only screen and (max-width: $bp-kindle) {
+        margin-left: 13.4rem;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        margin-left: 13.2rem;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        position: relative;
+        font-size: 3.1rem;
+        top: -18%;
+        right: -74.5%;
+        white-space: nowrap;
+      }
+
+      @media only screen and (max-width: $bp-galaxy) {
+        right: -58.5%;
+      }
+    }
+
+    &--2 {
+      margin-left: 15rem;
+      opacity: 0;
+
+      @media only screen and (max-width: $bp-kindle) {
+        margin-left: 10rem;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        margin-left: 9rem;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        position: relative;
+        font-size: 3.1rem;
+        top: -18%;
+        right: -54%;
+        white-space: nowrap;
+      }
+
+      @media only screen and (max-width: $bp-galaxy) {
+        right: -40.5%;
+      }
+    }
+
+    &--3 {
+      margin-left: 12.5rem;
+      opacity: 0;
+
+      @media only screen and (max-width: $bp-kindle) {
+        margin-left: 9rem;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        margin-left: 8rem;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        position: relative;
+        font-size: 3.1rem;
+        top: -18%;
+        right: -54%;
+        white-space: nowrap;
+      }
+    }
+
+    &--4 {
+      margin-left: 19rem;
+      opacity: 0;
+
+      @media only screen and (max-width: $bp-kindle) {
+        margin-left: 13rem;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        margin-left: 12rem;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        position: relative;
+        font-size: 3.1rem;
+        top: -18%;
+        right: -58%;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &__one:hover &__caption--1 {
+    opacity: 1;
+    transition: all 0.5s;
+  }
+
+  &__two:hover &__caption--2 {
+    opacity: 1;
+    transition: all 0.5s;
+  }
+
+  &__three:hover &__caption--3 {
+    opacity: 1;
+    transition: all 0.5s;
+  }
+
+  &__four:hover &__caption--4 {
+    opacity: 1;
+    transition: all 0.5s;
+  }
+
+  &__images--1:hover,
+  &__images--2:hover,
+  &__images--3:hover,
+  &__images--4:hover {
+    filter: opacity(90%) brightness(60%);
+    transition: all 0.5s;
+  }
+}

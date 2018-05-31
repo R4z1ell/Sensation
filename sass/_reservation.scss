@@ -1,0 +1,401 @@
+.reservation {
+  background-image: linear-gradient(
+      rgba($color-black, 0.25),
+      rgba($color-black, 0.25)
+    ),
+    url(../img/jason-leung-537357-unsplash.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-columns: 1fr repeat(16, 7.5rem) 1fr;
+  grid-template-rows: repeat(25, 2.4192rem);
+
+  @media only screen and (max-width: $bp-kindle) {
+    grid-template-columns: repeat(32, 4.9rem);
+  }
+
+  @media only screen and (max-width: $bp-largest) {
+    width: 1200px;
+    grid-template-columns: repeat(32, 4.68rem);
+  }
+
+  @media only screen and (max-width: $bp-ipad) {
+    width: 1024px;
+  }
+
+  @media only screen and (max-width: $bp-iphone-6-Plus) {
+    grid-template-columns: repeat(32, 2.12rem);
+    grid-template-rows: repeat(50, 2.4192rem);
+    width: 414px;
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(24, 2.216rem);
+    grid-template-rows: repeat(12, 3.36rem);
+    grid-column-gap: 9px;
+
+    grid-column: 2 / span 8;
+    grid-row: 6 / span 15;
+    background-color: $color-white;
+    margin-left: 4.8rem;
+    margin-right: 2rem;
+
+    @media only screen and (max-width: $bp-kindle) {
+      grid-column: 5 / span 12;
+    }
+
+    @media only screen and (max-width: $bp-ipad) {
+      grid-column: 4 / span 12;
+      position: relative;
+      left: 8%;
+    }
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      grid-row: 6 / span 15;
+      grid-column: 1 / span 30;
+      margin-left: 6.1rem;
+      margin-right: 1rem;
+      grid-template-columns: repeat(16, 2.216rem);
+      position: relative;
+      left: -0.5%;
+    }
+  }
+
+  &__clock {
+    grid-column: 8 / span 1;
+    grid-row: 5 / span 1;
+
+    @media only screen and (max-width: $bp-kindle) {
+      width: 550%;
+      height: auto;
+      padding-right: 2rem;
+      margin-top: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      grid-column: 7 / span 1;
+      margin-left: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-ipad) {
+      width: 600%;
+      height: auto;
+    }
+
+    @media only screen and (max-width: $bp-nexus7) {
+      width: 650%;
+      position: relative;
+      right: 90%;
+      top: -20%;
+    }
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      grid-column: 8 / span 2;
+      width: 250%;
+      height: auto;
+      margin-left: 2.7rem;
+    }
+  }
+
+  &__heading {
+    &--main {
+      grid-column: 6 / span 6;
+      color: $color-primary;
+      font-family: $font-display;
+      font-size: 5rem;
+      font-weight: 700;
+      white-space: nowrap;
+
+      @media only screen and (max-width: $bp-largest) {
+        grid-column: 5 / span 6;
+        margin-left: 1rem;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        font-size: 6rem;
+        grid-column: 5 / span 6;
+        margin-left: 1.7rem;
+      }
+    }
+
+    &--sub {
+      grid-column: 2 / span 6;
+      margin-top: 2.5rem;
+      color: $color-secondary;
+      font-size: 4rem;
+      font-weight: 400;
+      white-space: nowrap;
+
+      @media only screen and (max-width: $bp-kindle) {
+        position: relative;
+        left: -3%;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        position: relative;
+        left: -10%;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        margin-top: 3rem;
+        margin-left: 1.6rem;
+      }
+    }
+  }
+
+  &__opening {
+    color: $color-secondary-light;
+    font-size: 1.7rem;
+    font-weight: 500;
+
+    &--1 {
+      text-align: center;
+      grid-column: 2 / span 6;
+      grid-row: 9 / span 1;
+
+      @media only screen and (max-width: $bp-kindle) {
+        margin-right: 3.5rem;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        grid-column: 1 / span 6;
+        margin-left: 2rem;
+        margin-top: 1rem;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        font-size: 1.9rem;
+        grid-column: 1 / span 7;
+      }
+    }
+
+    &--2 {
+      text-align: center;
+      grid-column: 7 / span 6;
+      grid-row: 9 / span 1;
+
+      @media only screen and (max-width: $bp-kindle) {
+        margin-right: 2.5rem;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        grid-column: 6 / span 6;
+        margin-left: 3.3rem;
+        margin-top: 1rem;
+      }
+
+      @media only screen and (max-width: $bp-ipad) {
+        margin-left: 1.8rem;
+      }
+
+      @media only screen and (max-width: $bp-nexus7) {
+        margin-left: -0.3rem;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        font-size: 1.9rem;
+        grid-column: 6 / span 7;
+        margin-right: 2rem;
+      }
+    }
+
+    &--3 {
+      text-align: center;
+      grid-column: 13 / span 3;
+      grid-row: 9 / span 1;
+
+      @media only screen and (max-width: $bp-kindle) {
+        margin-left: -3rem;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        grid-column: 12 / span 3;
+        margin-left: 2rem;
+        margin-top: 1rem;
+      }
+
+      @media only screen and (max-width: $bp-ipad) {
+        margin-left: -2.3rem;
+      }
+
+      @media only screen and (max-width: $bp-nexus7) {
+        margin-left: -5rem;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        font-size: 1.9rem;
+        grid-column: 10 / span 7;
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(24, 2.18rem);
+    grid-template-rows: repeat(24, 2.316rem);
+
+    grid-column: 10 / span 7;
+    grid-row: 2 / 25;
+    background-color: $color-secondary;
+
+    @media only screen and (max-width: $bp-kindle) {
+      grid-column: 17 / span 11;
+      margin-right: 2.5rem;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      margin-left: 0rem;
+      margin-right: 0rem;
+    }
+
+    @media only screen and (max-width: $bp-ipad) {
+      grid-column: 17 / span 11;
+    }
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      grid-row: 23 / span 24;
+      grid-column: 5 / span 27;
+      margin-right: 0.7rem;
+      position: relative;
+      left: -4.8%;
+    }
+
+    &--main {
+      grid-column: 9 / span 6;
+      grid-row: 1 / span 1;
+      color: $color-primary;
+      font-family: $font-display;
+      font-size: 5rem;
+      font-weight: 700;
+      white-space: nowrap;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        grid-column: 9 / span 6;
+        font-size: 6rem;
+      }
+    }
+
+    &--sub {
+      grid-column: 5 / span 6;
+      grid-row: 1 / span 1;
+      color: $color-white;
+      margin-top: 5rem;
+      font-size: 3.9rem;
+      font-weight: 400;
+      white-space: nowrap;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        grid-column: 6 / span 6;
+        font-size: 4rem;
+        margin-top: 5.8rem;
+      }
+    }
+
+    &--date {
+      grid-column: 5 / span 16;
+      grid-row: 7 / span 2;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        grid-column: 6 / span 16;
+      }
+    }
+
+    &--time {
+      grid-column: 5 / span 16;
+      grid-row: 10 / span 2;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        grid-column: 6 / span 16;
+      }
+    }
+
+    &--people {
+      grid-column: 5 / span 16;
+      grid-row: 13 / span 2;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        grid-column: 6 / span 16;
+      }
+    }
+
+    &--email {
+      grid-column: 5 / span 16;
+      grid-row: 16 / span 2;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        grid-column: 6 / span 16;
+      }
+    }
+
+    &--phone {
+      grid-column: 5 / span 16;
+      grid-row: 19 / span 2;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        grid-column: 6 / span 16;
+      }
+    }
+
+    &--ghost {
+      grid-column: 9 / span 8;
+      grid-row: 22 / span 2;
+
+      border: 2px solid $color-white;
+      color: $color-white;
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+      padding: 1rem 2.9rem;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      @media only screen and (max-width: $bp-ipad) {
+        padding: 1rem 2.8rem;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        font-size: 1.8rem;
+        padding: 3rem 8rem;
+        grid-column: 9 / span 9;
+        grid-row: 23 / span 2;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        top: -45%;
+        right: -7%;
+      }
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-secondary;
+        transition: background-color 0.2s, border 0.2s, color 0.2s;
+      }
+    }
+
+    &--input {
+      background-color: $color-secondary;
+      border: none;
+      border-bottom: 1px solid $color-white;
+      color: $color-white;
+      font-family: $font-primary;
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        font-size: 2.3rem;
+      }
+    }
+  }
+}
+
+::placeholder {
+  color: $color-white;
+  opacity: 1;
+}

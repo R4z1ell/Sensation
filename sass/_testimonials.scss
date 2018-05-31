@@ -1,0 +1,209 @@
+.testimonials {
+  background-image: linear-gradient(
+      rgba($color-black, 0.45),
+      rgba($color-black, 0.45)
+    ),
+    url(../img/parallax-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: grid;
+  grid-column: full-start / full-end;
+  grid-template-columns: 1fr repeat(60, 2rem) 1fr;
+  grid-template-rows: repeat(40, 1.565rem);
+  position: relative;
+
+  @media only screen and (max-width: $bp-kindle) {
+    width: 1280px;
+  }
+
+  @media only screen and (max-width: $bp-largest) {
+    width: 1200px;
+  }
+
+  @media only screen and (max-width: $bp-ipad) {
+    width: 1024px;
+  }
+
+  @media only screen and (max-width: $bp-nexus7) {
+    width: 960px;
+  }
+
+  @media only screen and (max-width: $bp-iphone-6-Plus) {
+    grid-template-columns: repeat(30, 2.269rem);
+    grid-template-rows: repeat(80, 1.513rem);
+  }
+
+  &__heading--main {
+    color: $color-primary;
+    font-family: $font-display;
+    font-size: 5rem;
+    font-weight: 700;
+    grid-column: 27 / min-content;
+    grid-row: 4 / min-content;
+    white-space: nowrap;
+    margin-left: 1.5rem;
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      grid-column: 10 / span 5;
+      font-size: 8rem;
+    }
+  }
+
+  &__heading--sub {
+    color: $color-white;
+    font-size: 4rem;
+    font-weight: 400;
+    grid-column: 23 / min-content;
+    grid-row: 8 / min-content;
+    white-space: nowrap;
+    margin-left: 1.2rem;
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      grid-column: 7 / min-content;
+      grid-row: 10;
+      font-size: 4.5rem;
+    }
+  }
+
+  &__shape {
+    &--picture--1 {
+      border-radius: 50%;
+      width: 12rem;
+      height: 12rem;
+      position: absolute;
+      top: 17.4rem;
+      left: 35rem;
+
+      @media only screen and (max-width: $bp-kindle) {
+        left: 18.4rem;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        left: 15rem;
+      }
+
+      @media only screen and (max-width: $bp-nexus7) {
+        left: 15rem;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        left: 0.6%;
+        top: 21.5%;
+      }
+    }
+  }
+
+  &__image {
+    z-index: 5;
+
+    &--1 {
+      border-radius: 50%;
+      position: absolute;
+      top: 17.4rem;
+      right: 18.5%;
+
+      @media only screen and (max-width: $bp-kindle) {
+        width: 12rem;
+        height: 12rem;
+        right: 11.7%;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        width: 12rem;
+        height: 12rem;
+        right: 10.1%;
+      }
+
+      @media only screen and (max-width: $bp-nexus7) {
+        left: 122.4rem;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        width: 12rem;
+        height: 12rem;
+        left: 0.6%;
+        top: 55.3%;
+      }
+    }
+  }
+
+  &__left {
+    grid-column: 4 / span 26;
+    grid-row: 16 / span 16;
+    border: solid 5px $color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 2rem;
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      grid-column: 3 / span 26;
+      grid-row: 22 / span 19;
+    }
+
+    &--title {
+      color: $color-white;
+      font-size: 1.8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      white-space: nowrap;
+      align-self: center;
+      margin-top: 2rem;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        font-size: 2.6rem;
+      }
+    }
+
+    &--text {
+      color: $color-white;
+      font-size: 1.7rem;
+      line-height: 2.8rem;
+      padding-right: 3.6rem;
+      padding-left: 3.6rem;
+      margin-bottom: 2rem;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+      }
+    }
+  }
+
+  &__right {
+    grid-column: 33 / span 26;
+    grid-row: 16 / span 16;
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      grid-column: 3 / span 26;
+      grid-row: 49 / span 19;
+    }
+  }
+
+  &__span {
+    grid-column: 28 / min-content;
+    grid-row: 35;
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      grid-column: 13 / min-content;
+      grid-row: 74;
+    }
+
+    &--1,
+    &--2,
+    &--3 {
+      display: inline-block;
+      cursor: pointer;
+      background-color: $color-white;
+      margin-right: 0.5rem;
+      width: 5rem;
+      height: 0.5rem;
+
+      &:hover {
+        background-color: $color-primary;
+      }
+    }
+  }
+}

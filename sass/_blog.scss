@@ -1,0 +1,314 @@
+.blog {
+  display: grid;
+  grid-column: full-start / full-end;
+  grid-template-columns: repeat(51, 3.75rem);
+  grid-template-rows: repeat(40, 2.18rem);
+
+  @media only screen and (max-width: $bp-iphone-6-Plus) {
+    grid-template-rows: repeat(119, 2.18rem);
+    grid-template-columns: repeat(32, 2.12rem);
+  }
+
+  &__heading--main {
+    color: $color-primary;
+    font-family: $font-display;
+    font-size: 5rem;
+    font-weight: 700;
+    grid-column: 24 / span 3;
+    grid-row: 4 / span 1;
+    white-space: nowrap;
+    margin-left: 1.8rem;
+
+    @media only screen and (max-width: $bp-kindle) {
+      grid-column: 20 / span 3;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      grid-column: 19 / span 3;
+    }
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      grid-column: 12 / span 3;
+      font-size: 6.5rem;
+    }
+  }
+
+  &__heading--sub {
+    font-size: 4rem;
+    font-weight: 400;
+    grid-column: 21 / span 3;
+    grid-row: 7 / span 2;
+    white-space: nowrap;
+    margin-top: -1rem;
+    margin-left: 2.5rem;
+
+    @media only screen and (max-width: $bp-kindle) {
+      grid-column: 17 / span 3;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      grid-column: 16 / span 3;
+    }
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      grid-column: 7 / span 3;
+      font-size: 4.5rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &__card {
+    grid-row: 13 / min-content;
+    grid-column: 10;
+    width: 37rem;
+    height: 54.5rem;
+    box-shadow: 0 2px 1rem rgba($color-black, 0.4);
+    margin-left: 2rem;
+
+    @media only screen and (max-width: $bp-kindle) {
+      grid-column: 6;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      grid-column: 5;
+    }
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      grid-row: 15 / min-content;
+      grid-column: 3;
+      width: 56rem;
+      height: 69rem;
+      margin-left: 1.8rem;
+    }
+
+    &--2 {
+      grid-column: 21;
+      grid-row: 13 / min-content;
+      margin-left: 1.73rem;
+
+      @media only screen and (max-width: $bp-kindle) {
+        grid-column: 17;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        grid-column: 16;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        grid-row: 49;
+        grid-column: 3;
+        margin-left: 1.8rem;
+      }
+    }
+
+    &--3 {
+      grid-column: 32;
+      grid-row: 13 / min-content;
+      margin-left: 1rem;
+
+      @media only screen and (max-width: $bp-kindle) {
+        grid-column: 28;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        grid-column: 27;
+      }
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        grid-row: 83;
+        grid-column: 3;
+        margin-left: 1.8rem;
+      }
+    }
+  }
+
+  &__shape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -4.5rem;
+
+    &--picture {
+      border-radius: 50%;
+      border: solid 2px $color-primary;
+      width: 7rem;
+      height: 7rem;
+      z-index: 5;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        width: 11rem;
+        height: 11rem;
+        margin-top: -1.4rem;
+      }
+    }
+
+    &--title {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-top: 0.4rem;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  &__text {
+    color: $color-grey;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    margin: 2.5rem 5rem 1rem 5rem;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      font-size: 2.3rem;
+      margin-top: 2rem;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      margin-top: 6rem;
+    }
+
+    &--calendar {
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-left: 2rem;
+      margin-top: 0.5rem;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        width: 2.1rem;
+        height: 2.1rem;
+      }
+    }
+
+    &--date {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-left: 0.9rem;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        font-size: 2.1rem;
+      }
+    }
+
+    &--more {
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: $color-secondary;
+      margin-right: 2rem;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        font-size: 2.1rem;
+      }
+    }
+
+    &--elements {
+      display: flex;
+      align-content: center;
+    }
+  }
+
+  &__divider {
+    border: solid 1px $color-primary;
+    opacity: 0.8;
+    margin-left: 12.5rem;
+    margin-top: 2.5rem;
+    width: 32%;
+
+    @media only screen and (max-width: $bp-iphone-6-Plus) {
+      margin-left: 19rem;
+    }
+  }
+
+  &__top {
+    position: relative;
+    width: 37rem;
+    height: 26.8rem;
+
+    &--1 {
+      background-image: url(../img/4.jpg);
+      background-size: cover;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        width: 56rem;
+        height: 34.5rem;
+      }
+    }
+
+    &--2 {
+      background-image: url(../img/3.jpg);
+      background-size: cover;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        width: 56rem;
+        height: 34.5rem;
+      }
+    }
+
+    &--3 {
+      background-image: url(../img/6.jpg);
+      background-position: center;
+      background-size: cover;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        width: 56rem;
+        height: 34.5rem;
+      }
+    }
+
+    &--caption--1 {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $color-white;
+      text-align: center;
+      margin-right: 4rem;
+      margin-left: 4rem;
+      position: absolute;
+      top: 40%;
+      opacity: 0;
+
+      @media only screen and (max-width: $bp-iphone-6-Plus) {
+        font-size: 3rem;
+      }
+    }
+
+    &:hover &--caption--1 {
+      opacity: 1;
+      transition: all 0.3s;
+    }
+
+    &--1:hover {
+      background-image: linear-gradient(
+          rgba($color-black, 0.65),
+          rgba($color-black, 0.65)
+        ),
+        url(../img/4.jpg);
+      cursor: pointer;
+    }
+
+    &--2:hover {
+      background-image: linear-gradient(
+          rgba($color-black, 0.65),
+          rgba($color-black, 0.65)
+        ),
+        url(../img/3.jpg);
+      cursor: pointer;
+    }
+
+    &--3:hover {
+      background-image: linear-gradient(
+          rgba($color-black, 0.65),
+          rgba($color-black, 0.65)
+        ),
+        url(../img/6.jpg);
+      cursor: pointer;
+    }
+  }
+}
